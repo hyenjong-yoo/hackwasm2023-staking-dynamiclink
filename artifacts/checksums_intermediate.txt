@@ -1,0 +1,2 @@
+7d4aec0ed55af5092bed69d421abe51ef6a1de28902eefa44851cc81f2a34d70  ./target/wasm32-unknown-unknown/release/cw721_base_dynamiclink.wasm
+b19c02eafe52361c76874639a8ae749a77c5588a4f1a51368736bf238e4621e9  ./target/wasm32-unknown-unknown/release/staking.wasm

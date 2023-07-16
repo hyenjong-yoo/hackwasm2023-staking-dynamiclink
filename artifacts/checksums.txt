@@ -1,0 +1,2 @@
+e6cdd8fbe2056320b52a0847990ceecffde96006543d8bb06756aead11584939  cw721_base_dynamiclink.wasm
+c7aff3a22c55712b3c2ae11ac8cfa340158083305ca714b1cb142f583dac86a6  staking.wasm
