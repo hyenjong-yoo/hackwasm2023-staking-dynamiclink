@@ -1,2 +1,3 @@
-7d4aec0ed55af5092bed69d421abe51ef6a1de28902eefa44851cc81f2a34d70  ./target/wasm32-unknown-unknown/release/cw721_base_dynamiclink.wasm
-b19c02eafe52361c76874639a8ae749a77c5588a4f1a51368736bf238e4621e9  ./target/wasm32-unknown-unknown/release/staking.wasm
+e3f106140ca1614b9dc9f6f88eeb201d1b9ca1c7e70fbec84d406066603160a6  ./target/wasm32-unknown-unknown/release/cw721_base_dynamiclink.wasm
+169c5a2d7283d8913aaf37e332f4386ef44936ebe10e37d8ef372d2a46ee8ca2  ./target/wasm32-unknown-unknown/release/dex.wasm
+80010a8d18895668f577cdee849f72fb3aadf66d2f70b9dc5069a7f793c5b350  ./target/wasm32-unknown-unknown/release/staking.wasm

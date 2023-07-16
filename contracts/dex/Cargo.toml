@@ -1,6 +1,6 @@
 [package]
-name          = "staking"
-description   = "Example staking to use dynamic link"
+name          = "dex"
+description   = "Example dex to use dynamic link"
 version       = "0.1.0"
 edition       = "2021"
 

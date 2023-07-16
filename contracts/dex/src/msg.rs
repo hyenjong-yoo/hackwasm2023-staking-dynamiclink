@@ -1,20 +1,23 @@
 use cosmwasm_schema::cw_serde;
-use cosmwasm_std::{Addr};
+use cosmwasm_std::Addr;
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct InstantiateMsg {
-    pub callee_addr: Addr,
+    pub callee_contract_address: Addr,
+    pub fee: String,
+    pub denom: String,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum ExecuteMsg {
-    Mint(MintingMsg),           // for StartDelegate
-    Transfer(TransferMsg),      // for Transfer
-    Burn(BurnMsg),            // for Reward
     CallCallerAddressOf { target: Addr },
+    Transfer(TransferMsg),
+    Stake { },
+    Reward { token_id: String },
+    Swap { denom_to: String },
 }
 
 #[cw_serde]
