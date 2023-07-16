@@ -1,7 +1,7 @@
 #[cfg(not(feature = "library"))]
 use cosmwasm_std::{
     dynamic_link, entry_point,
-    Addr, Binary, Contract, DepsMut, Env, MessageInfo, Response, StdResult, to_vec, Deps, from_slice,
+    Addr, Binary, Contract, DepsMut, Env, MessageInfo, Response, StdResult, to_vec, Deps,
     StakingMsg, Coin, Uint128, BankMsg, StdError
 };
 use crate::state::{FEE, DENOM, FEES_COLLECTED, TOKENS, CALLEE_CONTRACT_ADDRESS};
