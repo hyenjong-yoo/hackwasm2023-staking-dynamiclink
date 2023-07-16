@@ -335,13 +335,8 @@ pub fn try_mint(
     deps: DepsMut,
     msg: MintingMsg
 ) -> Result<Response, ContractError> {
-    let address: Addr = from_slice(
-        &deps
-            .storage
-            .get(b"dynamic_callee_contract")
-            .ok_or_else(|| ContractError::Storage("cannot get callee address".to_string()))?,
-    )?;
-    let contract = CalleeContract { address };
+    let address : String = CALLEE_CONTRACT_ADDRESS.load(deps.storage)?;
+    let contract = CalleeContract { address: Addr::unchecked(address.clone()) };
     let mint_res = contract.mint(msg.clone());
     let res = Response::default()
         .add_attributes(mint_res);
@@ -354,13 +349,8 @@ pub fn try_transfer(
     info: MessageInfo,
     msg: TransferMsg,
 ) -> Result<Response, ContractError> {
-    let address: Addr = from_slice(
-        &deps
-            .storage
-            .get(b"dynamic_callee_contract")
-            .ok_or_else(|| ContractError::Storage("cannot get callee address".to_string()))?,
-    )?;
-    let contract = CalleeContract { address };
+    let address : String = CALLEE_CONTRACT_ADDRESS.load(deps.storage)?;
+    let contract = CalleeContract { address: Addr::unchecked(address.clone()) };
     let transfer_res = contract.transfer_nft(info, msg.clone().recipient, msg.clone().token_id);
     let res = Response::default()
         .add_attributes(transfer_res);
