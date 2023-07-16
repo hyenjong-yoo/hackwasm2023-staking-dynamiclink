@@ -26,6 +26,8 @@ There are two contracts used for DEX (decentralized exchange) service implementa
 1. cw721 base contract : https://hw-scan.finschia.network/Finschia-Base/cosmwasm/49/contracts
 2. dex contract : https://hw-scan.finschia.network/Finschia-Base/cosmwasm/50/contracts
 
+dex contract balance: https://hw-scan.finschia.network/Finschia-Base/account/link1lt0k03fwhdrlpm5asvvd2la9ef5yjdq4zru5tp928x73ydcaltmq55tk67
+
 Website: Finschia-Base : https://hw-scan.finschia.network/Finschia-Base
 
 Note: Transactions (tx) were made on Finschia-Base in this demonstration
